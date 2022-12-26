@@ -1,130 +1,173 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-</head>
-<body>
-    <header class="page-header">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" class="logo">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+      </div>
     </header>
+
     <main>
-        <!-- Hero -->
-        <section class="hero">
-            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>  
-            <button class="button" type="button">Замовити послугу</button> 
-        </section>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="title hero__title">
+            Ефективні рішення для вашого бізнесу
+          </h1>
+          <button class="btn" type="button">Замовити послугу</button>
+        </div>
+      </section>
 
-        <!-- Features -->
-        <section class="section features">
-            <ul class="features__list">
-                <li class="features__item">
-                    <h2 class="section__title">Увага до деталей</h2>
-                    <p class="section__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li> 
-                <li class="features__item">
-                    <h2 class="section__title">Пунктуальність</h2>
-                    <p class="section__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li> 
-                <li class="features__item">
-                    <h2 class="section__title">Планування</h2>
-                    <p class="section__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li> 
-                <li class="features__item">
-                    <h2 class="section__title">Сучасні технології</h2>
-                    <p class="section__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>   
-            </ul>
-            
-        </section>
+      <!-- Features -->
+      <section class="section features">
+        <div class="container">
+          <h2 class="title section__title">Особливості</h2>
 
-        <!-- Team -->
-        <section class="section team">
-            <h2 class="section__title">Наша команда</h2>
-            <ul class="team__list">
-                <li class="team__item">
-                    <h3 class="team__title">Ігор Дем'яненко</h3>
-                    <p class="team__desription">Product Designer</p>
-                    <ul class="social-media">
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                    </ul>
-                </li>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="title features__title">Увага до деталей</h3>
+              <p class="features__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="title features__title">Пунктуальність</h3>
+              <p class="features__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="title features__title">Планування</h3>
+              <p class="features__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="features__item">
+              <h3 class="title features__title">Сучасні технології</h3>
+              <p class="features__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                <li class="team__item">
-                    <h3 class="team__title">Ольга Рєпіна</h3>
-                    <p class="team__desription">Frontend Developer</p>
-                    <ul class="social-media">
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                    </ul>
-                </li>
+      <!-- Team -->
+      <section class="section team">
+        <div class="container">
+          <h2 class="title section__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <h3 class="team__title">Ігор Дем'яненко</h3>
+              <p class="team__desription">Product Designer</p>
+              <ul class="social-media">
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+              </ul>
+            </li>
 
-                <li class="team__item">
-                    <h3 class="team__title">Микола Тарасов</h3>
-                    <p class="team__desription">Marketing</p>
-                    <ul class="social-media">
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                    </ul>
-                </li>
+            <li class="team__item">
+              <h3 class="team__title">Ольга Рєпіна</h3>
+              <p class="team__desription">Frontend Developer</p>
+              <ul class="social-media">
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+              </ul>
+            </li>
 
-                <li class="team__item">
-                    <h3 class="team__title">Михайло Єрмаков</h3>
-                    <p class="team__desription">UI Designer</p>
-                    <ul class="social-media">
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                        <li class="social-media__item"></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            <li class="team__item">
+              <h3 class="team__title">Микола Тарасов</h3>
+              <p class="team__desription">Marketing</p>
+              <ul class="social-media">
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+              </ul>
+            </li>
 
-        <!-- Clients -->
-        <section class="section clients">
-            <h2 class="section__title">Постійні клієнти</h2>
-            <ul class="clients__list">
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-                <li class="clients__item"></li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer">
-        <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-        <address class="address">м. Київ, пр-т Лесі Українки, 26
-            <p class="address__mail">info@devstudio.com</p>
-            <p class="address_phone-number">+38 096 111 11 11</p>
-        </address>
-        <p class="footer__text">Приєднуйтесь</p>
+            <li class="team__item">
+              <h3 class="team__title">Михайло Єрмаков</h3>
+              <p class="team__desription">UI Designer</p>
+              <ul class="social-media">
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+                <li class="social-media__item"></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <ul class="social-media">
-            <li class="social-media__item"></li>
-            <li class="social-media__item"></li>
-            <li class="social-media__item"></li>
-            <li class="social-media__item"></li>
+      <!-- Clients -->
+      <section class="section clients">
+        <h2 class="section__title">Постійні клієнти</h2>
+        <ul class="clients__list">
+          <li class="clients__item"></li>
+          <li class="clients__item"></li>
+          <li class="clients__item"></li>
+          <li class="clients__item"></li>
+          <li class="clients__item"></li>
+          <li class="clients__item"></li>
+          <li class="clients__item"></li>
+          <li class="clients__item"></li>
         </ul>
+      </section>
+    </main>
 
-        <p class="footer__text">Підпишіться на розсилку</p>
-        <form action="" class="footer__form"></form>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+      <address class="address">
+        м. Київ, пр-т Лесі Українки, 26
+        <p class="address__mail">info@devstudio.com</p>
+        <p class="address_phone-number">+38 096 111 11 11</p>
+      </address>
+      <p class="footer__text">Приєднуйтесь</p>
 
-        <button class="button" type="button">Підписатися</button>
+      <ul class="social-media">
+        <li class="social-media__item"></li>
+        <li class="social-media__item"></li>
+        <li class="social-media__item"></li>
+        <li class="social-media__item"></li>
+      </ul>
+
+      <p class="footer__text">Підпишіться на розсилку</p>
+      <form action="" class="footer__form"></form>
+
+      <button class="button" type="button">Підписатися</button>
     </footer>
-</body>
+  </body>
 </html>
