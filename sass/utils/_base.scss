@@ -1,0 +1,29 @@
+body {
+  font-family: $font-family-primary;
+  font-weight: $normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 0;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+}
