@@ -1,0 +1,15 @@
+.hero {
+  text-align: center;
+
+  background-color: teal;
+}
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: $extra-bold;
+  font-size: 26px;
+  line-height: 1.62em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
