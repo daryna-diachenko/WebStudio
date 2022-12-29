@@ -183,12 +183,21 @@ p {
   border-color: transparent;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .container {
   width: 450px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid tomato;
+}
+
+.header {
+  background-color: #ffffff;
 }
 
 .hero {
@@ -206,9 +215,8 @@ p {
   color: #ffffff;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.features {
+  background-color: #ffffff;
 }
 
 .features__title {
@@ -222,4 +230,44 @@ p {
 
 .features__item {
   margin-bottom: 30px;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.clients {
+  background-color: #ffffff;
+}
+
+.footer {
+  text-align: center;
+  background: #2f303a;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  padding: 0;
+  color: #ffffff;
+}
+
+.address {
+  margin-bottom: 60px;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.address__mail,
+.address_phone-number {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
