@@ -1,0 +1,32 @@
+.footer {
+  text-align: center;
+  background: $dark-bg-color;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  padding: 0;
+  color: $white-color;
+}
+
+.address {
+  margin-bottom: 60px;
+  font-style: normal;
+  color: $white-color;
+}
+
+.address__mail,
+.address_phone-number {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: $off-white-color;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  font-weight: $bold;
+  line-height: 1.14em;
+  text-transform: uppercase;
+
+  color: $white-color;
+}
