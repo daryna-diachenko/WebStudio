@@ -1,7 +1,9 @@
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-
-  background-color: teal;
+  background-image: url(../../images/hero@1x-min.jpg);
+  background-color: $bg-color-dark;
 }
 .hero__title {
   margin-bottom: 30px;

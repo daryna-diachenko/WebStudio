@@ -3,6 +3,7 @@
 }
 
 .features__title {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: $bold;
@@ -16,7 +17,16 @@
 .features__item {
   margin-bottom: 30px;
 }
-
 // .features-list:last-child {
 //   margin-bottom: 0;
 // }
+
+.features__thumb {
+  background-color: $bg-color;
+}
+
+.features__icon {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
