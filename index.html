@@ -24,10 +24,15 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <div class="container mobile-menu">
         <a href="./index.html" class="logo">
           <span class="logo__accent">Web</span>Studio
         </a>
+        <button class="mobile-menu__btn" type="button">
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -45,10 +50,15 @@
       <!-- Features -->
       <section class="section features">
         <div class="container">
-          <h2 class="title section__title">Особливості</h2>
+          <h2 class="visually-hidden">Особливості</h2>
 
           <ul class="features__list">
             <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="title features__title">Увага до деталей</h3>
               <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -56,6 +66,11 @@
               </p>
             </li>
             <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <h3 class="title features__title">Пунктуальність</h3>
               <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -63,12 +78,22 @@
               </p>
             </li>
             <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="title features__title">Планування</h3>
               <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="features__item">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="title features__title">Сучасні технології</h3>
               <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
