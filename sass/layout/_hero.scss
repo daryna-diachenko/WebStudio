@@ -2,11 +2,20 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: url(../../images/hero@1x-min.jpg);
+  
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero@1x-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $bg-color-dark;
 }
+
 .hero__title {
   margin-bottom: 30px;
+
   font-weight: $extra-bold;
   font-size: 26px;
   line-height: 1.62em;
