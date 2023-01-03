@@ -1,0 +1,11 @@
+.social-media {
+  @include flex-center;
+}
+
+.social-media__item {
+  color: $icon-color;
+}
+
+.social-media__icon {
+  fill: currentColor;
+}
