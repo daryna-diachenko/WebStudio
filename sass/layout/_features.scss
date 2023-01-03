@@ -22,11 +22,9 @@
 // }
 
 .features__thumb {
+  @include flex-center;
+
+  min-height: 120px;
   background-color: $bg-color;
 }
 
-.features__icon {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
