@@ -19,7 +19,9 @@
 .address_phone-number {
   margin-top: 8px;
   margin-bottom: 0;
+  display: block;
   color: $off-white-color;
+  cursor: pointer;
 }
 
 .footer__text {
@@ -29,4 +31,13 @@
   text-transform: uppercase;
 
   color: $white-color;
+}
+
+.footer__social-media {
+  margin-bottom: 60px;
+}
+
+.footer__social-link {
+  color: $white-color;
+  background-color: $white-color-transparent;
 }
