@@ -11,8 +11,14 @@ $accent-color: #2196f3;
 $accent-color-darkened: #188ce8;
 $white-color: #ffffff;
 $off-white-color: rgba(255, 255, 255, 0.6);
+$off-white-border-color: rgba(255, 255, 255, 0.3);
 $white-color-transparent: rgba(255, 255, 255, 0.1);
+$black-color: #000000;
+$black-color-transparent: rgba(0, 0, 0, 0.1);
+$black-light-color: rgba(33, 33, 33, 0.2);
 $bg-color: #f5f4fa;
 $bg-color-dark: #2f303a;
 $icon-color: #afb1b8;
+
 $transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$retina: "screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx)";
