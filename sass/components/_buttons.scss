@@ -55,7 +55,7 @@
 .modal__close-btn {
   width: 30px;
   height: 30px;
-  @include abs-position(0, 0, null, null);
+  @include abs-position(8px, 8px, null, null);
   color: $black-color;
   background-color: transparent;
   border: 1px solid $black-color-transparent;
@@ -77,4 +77,10 @@
 
 .close-btn__icon {
   fill: currentColor;
+}
+
+.modal__send-btn {
+  display: block;
+  @include auto-centered;
+  margin-top: 30px;
 }
