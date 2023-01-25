@@ -7,13 +7,15 @@
 @import "components/logo";
 @import "components/buttons";
 @import "components/social-media";
+@import "components/contacts";
 @import "components/forms";
 @import "components/modal-window";
+@import "components/filter";
 
 @import "layout/section";
 @import "layout/container";
 @import "layout/header";
-@import "layout/mobile-menu";
+@import "layout/menu";
 @import "layout/site-nav";
 @import "layout/hero";
 @import "layout/features";
@@ -22,3 +24,4 @@
 @import "layout/footer";
 @import "layout/forms";
 @import "layout/portfolio";
+@import "layout/gallery";
