@@ -1,68 +1,14 @@
-.btn {
-  min-width: 200px;
-  padding: 10px 24px;
-  font-weight: $bold;
-  font-size: 16px;
-  line-height: 1.88em;
-  letter-spacing: 0.06em;
-  color: $white-color;
-  background-color: $accent-color;
-  cursor: pointer;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
-  transition: background-color $transition-function,
-    box-shadow $transition-function;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color-darkened;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
-
-// Mobile-menu
-.mobile-menu__btn {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: color $transition-function;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.mobile-menu__icon {
-  fill: currentColor;
-}
-
-// Subscribe
-.subscribe__btn {
+// Modal window buttons
+// !fix: strange configuration
+.close-btn {
+  @include abs-position(8px, 8px, null, null);
   @include flex-center;
-  @include auto-centered;
-}
-
-.subscribe__icon {
-  margin-left: 12px;
-  fill: currentColor;
-}
-
-// Modal
-.modal__close-btn {
   width: 30px;
   height: 30px;
-  @include abs-position(8px, 8px, null, null);
   color: $black-color;
   background-color: transparent;
   border: 1px solid $black-color-transparent;
   border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: transparent;
-  @include flex-center;
   transition: color $transition-function, box-shadow $transition-function;
 
   &:hover,
@@ -80,7 +26,72 @@
 }
 
 .modal__send-btn {
+  @extend %btn;
   display: block;
   @include auto-centered;
   margin-top: 30px;
+}
+
+// Mobile-menu buttons
+.mobile-menu__toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.mobile-menu__icon {
+  fill: currentColor;
+}
+
+.mobile-menu__close-btn {
+  @include abs-position(10px, 15px, null, null);
+  @include flex-center;
+  width: 40px;
+  height: 40px;
+  color: $secondary-text-color;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.mobile-menu__close-icon {
+  width: 18px;
+  height: 18px;
+}
+
+// Hero button
+.hero__btn {
+  @extend %btn;
+}
+
+// Subscribe buttton
+.subscribe__btn {
+  @include flex-center;
+  @include auto-centered;
+  @extend %btn;
+}
+
+.subscribe__icon {
+  margin-left: 12px;
+  fill: currentColor;
 }
