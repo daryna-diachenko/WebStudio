@@ -1,3 +1,13 @@
 .header {
-    background-color: $white-color;
+  background-color: $white-color;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint(tablet) {
+    justify-content:flex-start;
+  }
 }
