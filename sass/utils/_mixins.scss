@@ -1,4 +1,4 @@
-@mixin flex-center {
+@mixin flex-center () {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,11 +26,11 @@
 // This mixin uses the @content directive, so you need to add the related CSS rules separately, within the @include rule.
 @mixin breakpoint($point) {
   @if $point == desktop {
-    @media only screen and (min-width: 1366px) {
+    @media screen and (min-width: 1366px) {
       @content;
     }
   } @else if $point == tablet {
-    @media only screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
       @content;
     }
   }
@@ -39,5 +39,4 @@
 
 // @mixin font
 
-// @mixin retina-image
 
