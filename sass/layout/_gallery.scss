@@ -1,0 +1,57 @@
+.gallery__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.gallery__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__text {
+  @include abs-position(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  padding: 77px 24px;
+
+  font-size: 18px;
+  line-height: 1.56em;
+  color: $white-color;
+  background-color: $accent-color-transparent;
+
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform $transition-function, opacity $transition-function;
+
+  .gallery__link:hover &,
+  .gallery__link:focus & {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.gallery__meta {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  transition: box-shadow $transition-function;
+
+  .gallery__link:hover &,
+  .gallery__link:focus & {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.gallery__title {
+  @extend %title;
+  font-weight: $bold;
+  font-size: 18px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.gallery__descr {
+  font-size: 16px;
+  line-height: 1.88em;
+  color: $primary-text-color;
+}
