@@ -15,7 +15,26 @@
   background-color: $bg-color-dark;
 
   @media #{$retina} {
-    background-image: url(../images/hero@2x-min.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero@2x-min.jpg);
+  }
+
+  @include breakpoint(tablet) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tablet@1x-min.jpg);
+    @media #{$retina} {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tablet@2x-min.jpg);
+    }
   }
 }
 
@@ -30,4 +49,9 @@
   text-transform: uppercase;
 
   color: $white-color;
+
+  @include breakpoint(tablet) {
+    padding-left: 189px;
+    padding-right: 189px;
+  }
 }
