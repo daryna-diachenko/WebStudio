@@ -24,4 +24,7 @@ $bg-color-dark: #2f303a;
 $icon-color: #afb1b8;
 
 $transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// For bg retina images
 $retina: "screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi),screen and (min-resolution: 2dppx)";
+$gap: 15px;
+$border-radius: 4px;
