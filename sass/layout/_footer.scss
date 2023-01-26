@@ -3,6 +3,14 @@
   background: $bg-color-dark;
 }
 
+.flex-wrapper {
+  @include breakpoint(tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
 .footer__logo {
   margin-bottom: 20px;
   padding: 0;

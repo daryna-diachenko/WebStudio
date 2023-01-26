@@ -1,6 +1,30 @@
 .features {
   background-color: $white-color;
 }
+.features__list {
+  @include breakpoint(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$gap;
+  }
+}
+
+.features__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint(tablet) {
+    flex-basis: calc((100% - $gap * 4) / 2);
+    margin: $gap;
+  }
+}
+
+.features__thumb {
+  @include flex-center;
+  min-height: 120px;
+  background-color: $bg-color;
+}
 
 .features__title {
   @extend %title;
@@ -10,14 +34,8 @@
   font-size: 14px;
   line-height: 1.14em;
   text-transform: uppercase;
-}
 
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.features__thumb {
-  @include flex-center;
-  min-height: 120px;
-  background-color: $bg-color;
+  @include breakpoint(tablet) {
+    text-align: left;
+  }
 }
