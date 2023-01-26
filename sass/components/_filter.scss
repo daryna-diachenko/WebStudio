@@ -1,17 +1,21 @@
 .filter {
   @include flex-center;
-  justify-content: start;
   flex-wrap: wrap;
-  // margin-top: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+    margin-bottom: 40px;
+  }
 }
 
 .filter__btn {
-  //! fix bottom margin
-  margin-bottom: $gap;
-
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    //! fix bottom margin
+    margin-bottom: $gap;
   }
 }
 // !fix: no focus on filter buttons

@@ -1,5 +1,18 @@
-.gallery__card:not(:last-child) {
-  margin-bottom: 30px;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gap;
+}
+
+// !fix: equal height of cards
+.gallery__card {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @include breakpoint(tablet) {
+    flex-basis: calc((100% - $gap * 4) / 2);
+    margin: $gap;
+  }
 }
 
 .gallery__overlay {
@@ -26,6 +39,10 @@
   .gallery__link:focus & {
     transform: translateX(0);
     opacity: 1;
+  }
+
+  @include breakpoint(tablet) {
+    padding: 49px 24px;
   }
 }
 
