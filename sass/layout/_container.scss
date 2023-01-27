@@ -8,4 +8,8 @@
   @include breakpoint(tablet) {
     min-width: 768px;
   }
+
+  @include breakpoint(desktop) {
+    min-width: 1200px;
+  }
 }

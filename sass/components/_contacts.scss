@@ -4,10 +4,12 @@
     flex-direction: column;
     margin-bottom: 64px;
   }
-
   @include breakpoint(tablet) {
     flex-direction: column-reverse;
     justify-content: center;
+  }
+  @include breakpoint(desktop) {
+    flex-direction: row-reverse;
   }
 }
 
@@ -23,6 +25,10 @@
       color: $accent-color;
     }
   }
+  @include breakpoint(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
@@ -31,14 +37,28 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @include breakpoint(desktop) {
+    margin-right: 10px;
+  }
+
+  &.icon-envelope {
+    @include breakpoint(desktop) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &.icon-smartphone {
+    @include breakpoint(desktop) {
+      width: 10px;
+      height: 16px;
+    }
+  }
 }
 
 .contacts__tel {
   margin-bottom: 32px;
-
   font-size: 7.08vw;
   color: $accent-color;
-
   @include breakpoint(tablet) {
     margin-bottom: 0;
     font-size: 12px;
@@ -49,9 +69,12 @@
 .contacts__mail {
   font-size: 24px;
   color: $primary-text-color;
-
   @include breakpoint(tablet) {
     margin-bottom: 10px;
     font-size: 12px;
+  }
+  @include breakpoint(desktop) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }

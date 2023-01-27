@@ -34,7 +34,7 @@
         </button>
 
         <!------------------- Mobile menu ------------------>
-        <div class="mobile-menu__overlay js-menu-container">
+        <div class="mobile-menu js-menu-container">
           <button
             class="mobile-menu__close-btn js-close-menu"
             type="button"
@@ -49,16 +49,16 @@
             </svg>
           </button>
 
-          <div class="menu">
-            <ul class="nav">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link active">Студія</a>
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link active">Студія</a>
               </li>
-              <li class="nav__item">
-                <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
               </li>
-              <li class="nav__item">
-                <a href="#contacts" class="nav__link">Контакти</a>
+              <li class="site-nav__item">
+                <a href="#contacts" class="site-nav__link">Контакти</a>
               </li>
             </ul>
 
@@ -67,7 +67,7 @@
                 class="contacts__link contacts__tel"
                 href="tel:+38 096 111 11 11"
               >
-                <svg class="contacts__icon" width="10" height="14">
+                <svg class="contacts__icon icon-smartphone" width="10" height="14">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -76,36 +76,36 @@
                 class="contacts__link contacts__mail"
                 href="mailto:info@devstudio.com"
               >
-                <svg class="contacts__icon" width="14" height="10">
+                <svg class="contacts__icon icon-envelope" width="14" height="10">
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </div>
+          </nav>
 
-            <ul class="social-media mobile-socials">
-              <li class="mobile-socials__item">
-                <a class="mobile-socials__link" href="https://www.instagram.com"
-                  >Instagram
-                </a>
-              </li>
-              <li class="mobile-socials__item">
-                <a class="mobile-socials__link" href="https://twitter.com"
-                  >Twitter
-                </a>
-              </li>
-              <li class="mobile-socials__item">
-                <a class="mobile-socials__link" href="https://www.facebook.com/"
-                  >Facebook
-                </a>
-              </li>
-              <li class="mobile-socials__item">
-                <a class="mobile-socials__link" href="https://www.linkedin.com"
-                  >LinkedIn
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="social-media mobile-socials">
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="https://www.instagram.com"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="https://twitter.com"
+                >Twitter
+              </a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="https://www.facebook.com/"
+                >Facebook
+              </a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="https://www.linkedin.com"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -184,17 +184,20 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__card-set">
             <li class="team__card">
-              <img
-                srcset="
-                  ./images/team1-tablet@1x-min.jpg 354w,
-                  ./images/team1-mobile@1x-min.jpg 450w,
-                  ./images/team1-tablet@2x-min.jpg 708w,
-                  ./images/team1-mobile@2x-min.jpg 900w
-                "
-                src="./images/team1-mobile@1x-min.jpg"
-                alt="Ігор Дем'яненко"
-                sizes="(min-width: 768px) 50vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team1-mobile@1x-min.jpg 450w,
+                    ./images/team1-mobile@2x-min.jpg 900w
+                  "
+                  media="(min-width:320px)"
+                  sizes="(min-width: 320px) 100vw"
+                />
+                <img
+                  src="./images/team1-mobile@1x-min.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__description">Product Designer</p>
