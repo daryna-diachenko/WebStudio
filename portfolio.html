@@ -55,7 +55,9 @@
                 <a href="./index.html" class="site-nav__link">Студія</a>
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link active">Портфоліо</a>
+                <a href="./portfolio.html" class="site-nav__link active"
+                  >Портфоліо</a
+                >
               </li>
               <li class="site-nav__item">
                 <a href="#contacts" class="site-nav__link">Контакти</a>
@@ -67,7 +69,11 @@
                 class="contacts__link contacts__tel"
                 href="tel:+38 096 111 11 11"
               >
-                <svg class="contacts__icon icon-smartphone" width="10" height="14">
+                <svg
+                  class="contacts__icon icon-smartphone"
+                  width="10"
+                  height="14"
+                >
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -76,7 +82,11 @@
                 class="contacts__link contacts__mail"
                 href="mailto:info@devstudio.com"
               >
-                <svg class="contacts__icon icon-envelope" width="14" height="10">
+                <svg
+                  class="contacts__icon icon-envelope"
+                  width="14"
+                  height="10"
+                >
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
@@ -174,18 +184,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery1-mobile@1x-min.jpg 450w,
-                    ./images/gallery1-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery1-mobile@1x-min.jpg"
-                  alt="Картки зі
-              світлинами людей на ноутбуці"
-                  sizes="(min-width:768px) 50vw,
-              100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery1-tablet@1x-min.jpg 1x,
+                      ./images/gallery1-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery1-mobile@1x-min.jpg 1x,
+                      ./images/gallery1-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery1-mobile@1x-min.jpg"
+                    alt="Три картки зі світлинами людей на ноутбуці"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -203,16 +222,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery2-mobile@1x-min.jpg 450w,
-                    ./images/gallery2-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery2-mobile@1x-min.jpg"
-                  alt="Два баскетболісти з м'ячем"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery2-tablet@1x-min.jpg 1x,
+                      ./images/gallery2-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery2-mobile@1x-min.jpg 1x,
+                      ./images/gallery2-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery2-mobile@1x-min.jpg"
+                    alt="Два баскетболісти з м'ячем"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -230,16 +260,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery3-mobile@1x-min.jpg 450w,
-                    ./images/gallery3-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery3-mobile@1x-min.jpg"
-                  alt="Напис на тлі риби"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery3-tablet@1x-min.jpg 1x,
+                      ./images/gallery3-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery3-mobile@1x-min.jpg 1x,
+                      ./images/gallery3-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery3-mobile@1x-min.jpg"
+                    alt="Напис на тлі риби"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -257,16 +298,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery4-mobile@1x-min.jpg 450w,
-                    ./images/gallery4-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery4-mobile@1x-min.jpg"
-                  alt="Чорні навушники"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery4-tablet@1x-min.jpg 1x,
+                      ./images/gallery4-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery4-mobile@1x-min.jpg 1x,
+                      ./images/gallery4-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery4-mobile@1x-min.jpg"
+                    alt="Чорні навушники"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -284,16 +336,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery5-mobile@1x-min.jpg 450w,
-                    ./images/gallery5-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery5-mobile@1x-min.jpg"
-                  alt="Дві кробки, велика біла і менша бежева"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery5-tablet@1x-min.jpg 1x,
+                      ./images/gallery5-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery5-mobile@1x-min.jpg 1x,
+                      ./images/gallery5-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery5-mobile@1x-min.jpg"
+                    alt="Дві кробки, велика біла і менша бежева"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -311,16 +374,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery6-mobile@1x-min.jpg 450w,
-                    ./images/gallery6-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery6-mobile@1x-min.jpg"
-                  alt="Монітор із зображенням карти світу з точками і тексту"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery6-tablet@1x-min.jpg 1x,
+                      ./images/gallery6-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery6-mobile@1x-min.jpg 1x,
+                      ./images/gallery6-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery6-mobile@1x-min.jpg"
+                    alt="Монітор із зображенням карти світу з точками і тексту"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -337,16 +411,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery7-mobile@1x-min.jpg 450w,
-                    ./images/gallery7-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery7-mobile@1x-min.jpg"
-                  alt="Розгортка глянцевого журналу"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery7-tablet@1x-min.jpg 1x,
+                      ./images/gallery7-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery7-mobile@1x-min.jpg 1x,
+                      ./images/gallery7-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery7-mobile@1x-min.jpg"
+                    alt="Розгортка глянцевого журналу"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -364,15 +449,27 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    images/gallery8-mobile@1x-min.jpg   450w,
-                    ./images/gallery8-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery8-mobile@1x-min.jpg"
-                  alt="Картонна бірка з написом"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery8-tablet@1x-min.jpg 1x,
+                      ./images/gallery8-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery8-mobile@1x-min.jpg 1x,
+                      ./images/gallery8-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    class="gallery__img"
+                    src="./images/gallery8-mobile@1x-min.jpg"
+                    alt="Картонна бірка з написом"
+                  />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -389,16 +486,25 @@
           <li class="gallery__card">
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
-                <img
-                  class="gallery__img"
-                  srcset="
-                    ./images/gallery9-mobile@1x-min.jpg 450w,
-                    ./images/gallery9-mobile@2x-min.jpg 900w
-                  "
-                  src="./images/gallery9-mobile@1x-min.jpg"
-                  alt="Чоловічі руки на клавіатурі ноутбука, на екрані чоловік тримає планшет"
-                  sizes="(min-width:768px) 50vw, 100vw"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/gallery9-tablet@1x-min.jpg 1x,
+                      ./images/gallery9-tablet@2x-min.jpg 2x
+                    "
+                    sizes="50vw"
+                  />
+                  <source
+                    srcset="
+                      ./images/gallery9-mobile@1x-min.jpg 1x,
+                      ./images/gallery9-mobile@2x-min.jpg 2x
+                    "
+                  />
+                  <img class="gallery__img" "
+                  src="./images/gallery9-mobile@1x-min.jpg" alt="Чоловічі руки
+                  на клавіатурі ноутбука, на екрані чоловік тримає планшет" />
+                </picture>
                 <p class="gallery__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
