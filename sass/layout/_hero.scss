@@ -1,5 +1,6 @@
 .hero {
   width: 100%;
+
   max-height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -36,6 +37,25 @@
         url(../images/hero-tablet@2x-min.jpg);
     }
   }
+
+  @include breakpoint(desktop) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-desktop@1x-min.jpg);
+    max-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    @media #{$retina} {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-desktop@2x-min.jpg);
+    }
+  }
 }
 
 .hero__title {
@@ -53,5 +73,10 @@
   @include breakpoint(tablet) {
     padding-left: 189px;
     padding-right: 189px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 44px;
+    line-height: 1.36em;
   }
 }
