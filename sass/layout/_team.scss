@@ -7,6 +7,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: -$gap;
+
+    @include breakpoint(desktop) {
+      flex-wrap: nowrap;
+    }
   }
 }
 .team__card {
@@ -23,6 +27,10 @@
   @include breakpoint(tablet) {
     flex-basis: calc((100% - $gap * 4) / 2);
     margin: $gap;
+  }
+
+  @include breakpoint(desktop) {
+    flex-basis: calc((100% - $gap * 8) / 4);
   }
 }
 
