@@ -1,4 +1,10 @@
 // Subscribe form
+.subscribe__form {
+  @include breakpoint(desktop) {
+    display: flex;
+  }
+}
+
 .subscribe__field {
   width: 100%;
   padding: 15px 16px;
@@ -14,10 +20,19 @@
   @include breakpoint(tablet) {
     width: 450px;
   }
+
+  @include breakpoint(desktop) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .subscribe__btn {
   margin-top: 20px;
+
+  @include breakpoint(desktop) {
+    margin-top: 0;
+  }
 }
 
 // Modal form

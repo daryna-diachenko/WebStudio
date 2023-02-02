@@ -1,6 +1,19 @@
 .footer {
   text-align: center;
   background: $bg-color-dark;
+
+  @include breakpoint(desktop) {
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.footer__container {
+  @include breakpoint(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .flex-wrapper {
@@ -8,6 +21,12 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+  }
+}
+
+.flex-wrapper--left {
+  @include breakpoint(desktop) {
+    margin-right: 70px;
   }
 }
 
@@ -21,6 +40,10 @@
   margin-bottom: 60px;
   font-style: normal;
   color: $white-color;
+
+  @include breakpoint(desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .address__mail,
@@ -30,6 +53,10 @@
   display: block;
   color: $off-white-color;
   cursor: pointer;
+
+  @include breakpoint(desktop) {
+    margin-top: 9px;
+  }
 }
 
 .footer__text {
@@ -41,8 +68,18 @@
   color: $white-color;
 }
 
+.footer__text--right {
+  @include breakpoint(desktop) {
+    margin-bottom: 35px;
+  }
+}
+
 .footer__social-media {
   margin-bottom: 60px;
+
+  @include breakpoint(desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__social-link {

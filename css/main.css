@@ -215,6 +215,12 @@ img {
     padding-bottom: 26px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19em;
+  }
+}
 
 .logo__accent {
   color: #2196f3;
@@ -495,6 +501,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subscribe__field {
   width: 100%;
   padding: 15px 16px;
@@ -516,9 +530,20 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__field {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
 
 .subscribe__btn {
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    margin-top: 0;
+  }
 }
 
 .form__label {
@@ -1221,6 +1246,24 @@ img {
   text-align: center;
   background: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .flex-wrapper {
@@ -1235,6 +1278,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .flex-wrapper--left {
+    margin-right: 70px;
+  }
+}
+
 .footer__logo {
   margin-bottom: 20px;
   padding: 0;
@@ -1246,6 +1295,11 @@ img {
   font-style: normal;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
 
 .address__mail,
 .address_phone-number {
@@ -1254,6 +1308,12 @@ img {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .address__mail,
+.address_phone-number {
+    margin-top: 9px;
+  }
 }
 
 .footer__text {
@@ -1264,8 +1324,19 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__text--right {
+    margin-bottom: 35px;
+  }
+}
+
 .footer__social-media {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__social-media {
+    margin-bottom: 0;
+  }
 }
 
 .footer__social-link {
