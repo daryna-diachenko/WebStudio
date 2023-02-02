@@ -1165,6 +1165,12 @@ img {
       flex-wrap: wrap;
   margin: -15px;
 }
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .clients__item {
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
@@ -1175,6 +1181,12 @@ img {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 180px) / 6);
+        flex-basis: calc((100% - 180px) / 6);
   }
 }
 

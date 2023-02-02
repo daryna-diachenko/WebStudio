@@ -6,6 +6,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: -$gap;
+
+  @include breakpoint(desktop) {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__item {
@@ -14,6 +18,10 @@
 
   @include breakpoint(tablet) {
     flex-basis: calc((100% - $gap * 6) / 3);
+  }
+  
+  @include breakpoint(desktop) {
+    flex-basis: calc((100% - $gap * 12) / 6);
   }
 }
 
