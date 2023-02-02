@@ -124,7 +124,7 @@ summary {
   display: list-item;
 }
 
-.gallery__title, .team__title, .features__title, .hero__title, .section__title, .modal__title {
+.gallery__title, .team__title, .work__title, .features__title, .hero__title, .section__title, .modal__title {
   margin-top: 0;
   text-align: center;
   color: #212121;
@@ -775,6 +775,9 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  .section--no-top-padding {
+    padding-top: 0;
+  }
 }
 
 .section__title {
@@ -1111,6 +1114,45 @@ img {
   .features__title {
     text-align: left;
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+.work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -15px;
+}
+
+.work__item {
+  position: relative;
+  -ms-flex-preferred-size: calc((100% - 90px) / 3);
+      flex-basis: calc((100% - 90px) / 3);
+  margin: 15px;
+}
+
+.work__overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.work__title {
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .team {

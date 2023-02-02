@@ -1,0 +1,33 @@
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work__list {
+  display: flex;
+  margin: -$gap;
+}
+
+.work__item {
+  position: relative;
+  flex-basis: calc((100% - $gap * 6) / 3);
+  margin: $gap;
+}
+
+.work__overlay {
+  @include abs-position(null, 0, 0, 0);
+  width: 100%;
+  background-color: $overlay-color-work-sec;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.work__title {
+  @extend %title;
+  margin-bottom: 0;
+  font-weight: $bold;
+  line-height: 1.14em;
+  text-transform: uppercase;
+  color: $white-color;
+}
