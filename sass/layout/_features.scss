@@ -6,17 +6,27 @@
     display: flex;
     flex-wrap: wrap;
     margin: -$gap;
+
+    @include breakpoint(desktop) {
+      flex-wrap: nowrap;
+    }
   }
 }
 
 .features__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @include breakpoint(tablet) {
     flex-basis: calc((100% - $gap * 4) / 2);
     margin: $gap;
+  }
+
+  @include breakpoint(desktop) {
+    flex-basis: calc((100% - $gap * 8) / 4);
   }
 }
 
