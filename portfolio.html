@@ -186,6 +186,14 @@
               <div class="gallery__overlay">
                 <picture>
                   <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery1-desktop@1x-min.jpg 1x,
+                      ./images/gallery1-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/gallery1-tablet@1x-min.jpg 1x,
@@ -223,6 +231,14 @@
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
                 <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery2-desktop@1x-min.jpg 1x,
+                      ./images/gallery2-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -262,6 +278,14 @@
               <div class="gallery__overlay">
                 <picture>
                   <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery3-desktop@1x-min.jpg 1x,
+                      ./images/gallery3-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/gallery3-tablet@1x-min.jpg 1x,
@@ -299,6 +323,14 @@
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
                 <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery4-desktop@1x-min.jpg 1x,
+                      ./images/gallery4-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -338,6 +370,14 @@
               <div class="gallery__overlay">
                 <picture>
                   <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery5-desktop@1x-min.jpg 1x,
+                      ./images/gallery5-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/gallery5-tablet@1x-min.jpg 1x,
@@ -376,6 +416,14 @@
               <div class="gallery__overlay">
                 <picture>
                   <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery6-desktop@1x-min.jpg 1x,
+                      ./images/gallery6-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/gallery6-tablet@1x-min.jpg 1x,
@@ -412,6 +460,14 @@
             <a href="" class="gallery__link">
               <div class="gallery__overlay">
                 <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery7-desktop@1x-min.jpg 1x,
+                      ./images/gallery7-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
                   <source
                     media="(min-width: 768px)"
                     srcset="
@@ -451,6 +507,14 @@
               <div class="gallery__overlay">
                 <picture>
                   <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery8-desktop@1x-min.jpg 1x,
+                      ./images/gallery8-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/gallery8-tablet@1x-min.jpg 1x,
@@ -488,6 +552,14 @@
               <div class="gallery__overlay">
                 <picture>
                   <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/gallery9-desktop@1x-min.jpg 1x,
+                      ./images/gallery9-desktop@2x-min.jpg 2x
+                    "
+                    sizes="33.3vw"
+                  />
+                  <source
                     media="(min-width: 768px)"
                     srcset="
                       ./images/gallery9-tablet@1x-min.jpg 1x,
@@ -524,9 +596,9 @@
 
     <!---------------------------- Footer ------------------------>
     <footer class="section footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="flex-wrapper">
-          <div class="flex-wrapper__left">
+          <div class="flex-wrapper--left">
             <a href="./index.html" class="logo footer__logo">
               <span class="logo__accent">Web</span>Studio
             </a>
@@ -594,7 +666,9 @@
         </div>
 
         <div class="subscribe">
-          <p class="footer__text">Підпишіться на розсилку</p>
+          <p class="footer__text footer__text--right">
+            Підпишіться на розсилку
+          </p>
           <form action="" class="subscribe__form">
             <label for="email" class="visually-hidden">E-mail</label>
             <input
