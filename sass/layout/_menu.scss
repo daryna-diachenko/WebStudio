@@ -1,4 +1,4 @@
-.mobile-menu {
+.menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,6 +8,8 @@
   padding: 48px 40px;
   background-color: $white-color;
   transform: translateX(100%);
+  transition: transform $transition-function;
+
   @include breakpoint(tablet) {
     position: static;
     transform: translateX(0);
@@ -17,14 +19,13 @@
   }
 }
 
-.mobile-menu.is-open {
+.menu.is-open {
   transform: translateX(0);
-  transition: transform $transition-function;
 }
 
 .site-nav {
   display: flex;
-  @media screen and (max-width: 767px) {
+  @include breakpoint(mobile) {
     flex-direction: column;
     height: 100%;
   }
@@ -32,7 +33,7 @@
 
 .site-nav__list {
   display: flex;
-  @media screen and (max-width: 767px) {
+  @include breakpoint(mobile) {
     flex-direction: column;
     flex-grow: 1;
   }
@@ -54,15 +55,14 @@
 
 .site-nav__link {
   position: relative;
-  font-weight: 500;
+  font-weight: $medium;
   font-size: 40px;
   line-height: 1.17em;
   letter-spacing: 0.02em;
   color: $secondary-text-color;
   transition: color $transition-function;
   &:hover,
-  &:focus,
-  &.active {
+  &:focus {
     color: $accent-color;
   }
   @include breakpoint(tablet) {
@@ -107,7 +107,7 @@
 .mobile-socials__link {
   display: block;
 
-  font-weight: 500;
+  font-weight: $medium;
   font-size: 18px;
   line-height: 1.22em;
   letter-spacing: 0.02em;

@@ -1,18 +1,12 @@
 .logo {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
   font-family: $font-logo;
   font-weight: $bold;
   font-size: 24px;
   line-height: 1.17em;
 
-  color: $secondary-text-color;
-
-  @include breakpoint(tablet) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+  &--accent {
+    color: $accent-color;
   }
 
   @include breakpoint(desktop) {
@@ -21,6 +15,19 @@
   }
 }
 
-.logo__accent {
-  color: $accent-color;
+.header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $secondary-text-color;
+
+  @include breakpoint(tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  padding: 0;
+  color: $white-color;
 }

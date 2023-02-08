@@ -1,7 +1,9 @@
 .hero {
+  // Not to allow stretching more than max width
+  max-width: 1600px;
   width: 100%;
-
   max-height: 400px;
+  @include auto-centered;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
@@ -13,6 +15,7 @@
     url(../images/hero@1x-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: $bg-color-dark;
 
   @media #{$retina} {
@@ -39,15 +42,15 @@
   }
 
   @include breakpoint(desktop) {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-desktop@1x-min.jpg);
-    max-height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
+    
     @media #{$retina} {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
@@ -61,13 +64,11 @@
 .hero__title {
   @extend %title;
   margin-bottom: 30px;
-
   font-weight: $extra-bold;
   font-size: 26px;
   line-height: 1.62em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: $white-color;
 
   @include breakpoint(tablet) {

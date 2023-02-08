@@ -99,7 +99,7 @@
 }
 
 // Checkbox
-.checkbox__label {
+.checkbox {
   margin-bottom: 30px;
 }
 
@@ -127,6 +127,11 @@
 .checkbox__text {
   font-size: 12px;
   line-height: 1.17em;
+
+  @include breakpoint(desktop) {
+    font-size: 14px;
+    line-height: 1.71em;
+  }
 }
 
 .checkbox__link {

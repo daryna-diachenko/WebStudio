@@ -1,53 +1,39 @@
 .footer {
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: $bg-color-dark;
-
-  @include breakpoint(desktop) {
-    text-align: left;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 .footer__container {
-  @include breakpoint(desktop) {
+  @include breakpoint(tablet) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @include breakpoint(desktop) {
     justify-content: space-between;
   }
 }
 
 .flex-wrapper {
-  @include breakpoint(tablet) {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+
   }
 }
 
-.flex-wrapper--left {
-  @include breakpoint(desktop) {
-    margin-right: 70px;
-  }
-}
-
-.footer__logo {
-  margin-bottom: 20px;
-  padding: 0;
+.address__link {
   color: $white-color;
-}
-
-.address {
-  margin-bottom: 60px;
-  font-style: normal;
-  color: $white-color;
-
-  @include breakpoint(desktop) {
-    margin-bottom: 0;
-  }
 }
 
 .address__mail,
-.address_phone-number {
+.address_tel {
   margin-top: 8px;
   margin-bottom: 0;
   display: block;
@@ -68,21 +54,14 @@
   color: $white-color;
 }
 
-.footer__text--right {
-  @include breakpoint(desktop) {
-    margin-bottom: 35px;
-  }
-}
-
-.footer__social-media {
-  margin-bottom: 60px;
-
-  @include breakpoint(desktop) {
-    margin-bottom: 0;
-  }
-}
-
 .footer__social-link {
   color: $white-color;
   background-color: $white-color-transparent;
+}
+
+.footer__subscribe {
+  margin-top: 60px;
+  @include breakpoint(desktop) {
+    margin-top: 0;
+  }
 }

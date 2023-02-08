@@ -1,10 +1,11 @@
 .filter {
-  @include flex-center;
+  display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
-  @media screen and (max-width: 767px) {
-    justify-content: start;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+
+  @include breakpoint(tablet) {
+    @include flex-center;
+    margin-bottom: 30px;
   }
   @include breakpoint(desktop) {
     margin-bottom: 50px;
@@ -12,25 +13,29 @@
 }
 
 .filter__btn {
+  min-width: 73px;
+  height: 38px;
+  //! fix right margin
   &:not(:last-child) {
     margin-right: 8px;
   }
 
-  @media screen and (max-width: 767px) {
+  @include breakpoint(mobile) {
     //! fix bottom margin
     margin-bottom: $gap;
   }
 }
 // !fix: no focus on filter buttons
-.btn__label {
+.filter__label {
   display: block;
   padding: 6px 22px;
-  color: $secondary-text-color;
-  background-color: $bg-color;
   border-radius: $border-radius;
-  font-weight: $medium;
+   font-weight: $medium;
   font-size: 16px;
   line-height: 1.62em;
+  text-align: center;
+  color: $secondary-text-color;
+  background-color: $bg-color;
   cursor: pointer;
   transition: color $transition-function, background-color $transition-function,
     box-shadow $transition-function;

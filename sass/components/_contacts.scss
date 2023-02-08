@@ -1,6 +1,6 @@
 .contacts {
   display: flex;
-  @media screen and (max-width: 767px) {
+  @include breakpoint(mobile){
     flex-direction: column;
     margin-bottom: 64px;
   }
@@ -14,9 +14,10 @@
 }
 
 .contacts__link {
-  font-weight: 500;
+  font-weight: $medium;
   line-height: 1.17em;
   letter-spacing: 0.02em;
+  
   @include breakpoint(tablet) {
     display: flex;
     transition: color $transition-function;
@@ -34,7 +35,7 @@
 .contacts__icon {
   margin-right: 8px;
   fill: currentColor;
-  @media screen and (max-width: 767px) {
+  @include breakpoint(mobile) {
     display: none;
   }
   @include breakpoint(desktop) {

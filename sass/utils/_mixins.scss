@@ -33,10 +33,9 @@
     @media screen and (min-width: 768px) {
       @content;
     }
+  } @else if $point == mobile {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
   }
 }
-
-
-// @mixin font
-
-

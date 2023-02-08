@@ -6,15 +6,11 @@
     display: flex;
     flex-wrap: wrap;
     margin: -$gap;
-
-    @include breakpoint(desktop) {
-      flex-wrap: nowrap;
-    }
   }
 }
 
 .features__item {
-  @media screen and (max-width: 767px) {
+  @include breakpoint(mobile) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -32,20 +28,20 @@
 
 .features__thumb {
   @include flex-center;
+  margin-bottom: 30px;
   min-height: 120px;
+  border-radius: 4px;
   background-color: $bg-color;
 }
 
 .features__title {
   @extend %title;
-  margin-top: 30px;
   margin-bottom: 10px;
-  font-weight: $bold;
   font-size: 14px;
   line-height: 1.14em;
   text-transform: uppercase;
 
   @include breakpoint(tablet) {
-    text-align: left;
+    text-align: start;
   }
 }

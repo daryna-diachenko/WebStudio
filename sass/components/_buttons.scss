@@ -1,6 +1,6 @@
 // Modal window buttons
 // !fix: strange configuration
-.close-btn {
+.btn-close {
   @include abs-position(8px, 8px, null, null);
   @include flex-center;
   width: 30px;
@@ -21,20 +21,22 @@
   }
 }
 
-.close-btn__icon {
+.btn-close__icon {
   fill: currentColor;
 }
 
-.modal__send-btn {
+.btn-send {
   @extend %btn;
   display: block;
   @include auto-centered;
   margin-top: 30px;
 }
 
-// Mobile-menu buttons
-.mobile-menu__toggle {
+// Menu buttons
+.menu__toggle {
+  padding: 0;
   border: none;
+  color: $secondary-text-color;
   background-color: transparent;
   cursor: pointer;
   transition: color $transition-function;
@@ -49,35 +51,15 @@
   }
 }
 
-.mobile-menu__icon {
+.menu__icon-menu {
   fill: currentColor;
 }
 
-.mobile-menu__close-btn {
+.menu__icon-close {
   @include abs-position(10px, 15px, null, null);
-  @include flex-center;
-  width: 40px;
-  height: 40px;
-  color: $secondary-text-color;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: color $transition-function;
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-
-  @include breakpoint(tablet) {
-    display: none;
-  }
+  fill: currentColor;
 }
 
-.mobile-menu__close-icon {
-  width: 18px;
-  height: 18px;
-}
 
 // Hero button
 .hero__btn {
