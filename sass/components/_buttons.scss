@@ -1,5 +1,4 @@
 // Modal window buttons
-// !fix: strange configuration
 .btn-close {
   @include abs-position(8px, 8px, null, null);
   @include flex-center;
@@ -32,7 +31,7 @@
   margin-top: 30px;
 }
 
-// Menu buttons
+// Menu button
 .menu__toggle {
   padding: 0;
   border: none;
@@ -66,7 +65,7 @@
   @extend %btn;
 }
 
-// Subscribe buttton
+// Subscribe button
 .subscribe__btn {
   @include flex-center;
   @include auto-centered;

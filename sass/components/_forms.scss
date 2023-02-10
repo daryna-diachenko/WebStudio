@@ -40,12 +40,15 @@
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.01em;
+  color: $primary-text-color;
+  .form__line:focus-within > & {
+    color: $accent-color;
+  }
 }
 
 .form__input-wrapper {
   position: relative;
   margin-bottom: 10px;
-  color: $secondary-text-color;
   transition: color $transition-function;
 }
 
@@ -109,15 +112,16 @@
   width: 16px;
   height: 15px;
   border: 2px solid $secondary-text-color;
-  border-radius: 3px;
-  transition: border-color $transition-function;
+  border-radius: $border-radius;
+  transition: border-color $transition-function,
+    background-color $transition-function;
 
-  .checkbox:focus + & {
+  .checkbox:focus-within &,
+  .checkbox:active & {
     border-color: $accent-color;
-    outline: none;
   }
 
-  .checkbox:checked + & {
+  .checkbox__input:checked + & {
     border: none;
     background-color: $accent-color;
     background-origin: border-box;

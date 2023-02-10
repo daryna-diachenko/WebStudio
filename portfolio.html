@@ -15,7 +15,7 @@
   </head>
   <body>
     <!------------------------ Header ------------------------>
-  <header class="header">
+    <header class="header">
       <div class="header__container container">
         <a href="./index.html" class="header__logo logo" lang="en">
           <span class="logo--accent">Web</span>Studio
@@ -29,7 +29,9 @@
                 <a href="./index.html" class="site-nav__link">Студія</a>
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link active">Портфоліо</a>
+                <a href="./portfolio.html" class="site-nav__link active"
+                  >Портфоліо</a
+                >
               </li>
               <li class="site-nav__item">
                 <a href="#contacts" class="site-nav__link">Контакти</a>
@@ -117,13 +119,13 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="visually-hidden">Наші роботи</h1>
+          <h1 class="section__title visually-hidden">Наші роботи</h1>
 
           <!--------------------- Filter ---------------------------->
-          <div class="filter" role="group">
-            <div class="filter__btn">
+          <ul class="filter" role="group">
+            <li class="filter__item">
               <input
-                class="filter__input visually-hidden"
+                class="filter__btn"
                 type="radio"
                 name="filter"
                 id="btn-1"
@@ -131,48 +133,48 @@
                 checked
               />
               <label for="btn-1" class="filter__label">Усі</label>
-            </div>
-            <div class="filter__btn">
+            </li>
+            <li class="filter__item">
               <input
-                class="filter__input visually-hidden"
+                class="filter__btn"
                 type="radio"
                 name="filter"
                 id="btn-2"
                 value="Веб-сайти"
               />
               <label for="btn-2" class="filter__label">Веб-сайти</label>
-            </div>
-            <div class="filter__btn">
+            </li>
+            <li class="filter__item">
               <input
-                class="filter__input visually-hidden"
+                class="filter__btn"
                 type="radio"
                 name="filter"
                 id="btn-3"
                 value="Додатки"
               />
               <label for="btn-3" class="filter__label">Додатки</label>
-            </div>
-            <div class="filter__btn">
+            </li>
+            <li class="filter__item">
               <input
-                class="filter__input visually-hidden"
+                class="filter__btn"
                 type="radio"
                 name="filter"
                 id="btn-4"
                 value="Дизайн"
               />
               <label for="btn-4" class="filter__label">Дизайн</label>
-            </div>
-            <div class="filter__btn">
+            </li>
+            <li class="filter__item">
               <input
-                class="filter__input visually-hidden"
+                class="filter__btn"
                 type="radio"
                 name="filter"
                 id="btn-5"
                 value="Маркетинг"
               />
               <label for="btn-5" class="filter__label">Маркетинг</label>
-            </div>
-          </div>
+            </li>
+          </ul>
 
           <!------------------------ Gallery ------------------------->
           <ul class="gallery">
@@ -313,7 +315,9 @@
                 </div>
 
                 <div class="gallery__meta">
-                  <h2 class="gallery__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <h2 class="gallery__title">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
                   <p class="gallery__descr filter__name">Додаток</p>
                 </div>
               </a>
@@ -360,7 +364,9 @@
                 </div>
 
                 <div class="gallery__meta">
-                  <h2 class="gallery__title">Проєкт <span lang="en">Prime</span></h2>
+                  <h2 class="gallery__title">
+                    Проєкт <span lang="en">Prime</span>
+                  </h2>
                   <p class="gallery__descr filter__name">Маркетинг</p>
                 </div>
               </a>
@@ -391,7 +397,7 @@
                         ./images/gallery5-mobile@1x-min.jpg 1x,
                         ./images/gallery5-mobile@2x-min.jpg 2x
                       "
-                       sizes="100vw"
+                      sizes="100vw"
                     />
                     <img
                       class="gallery__img"
@@ -407,7 +413,9 @@
                 </div>
 
                 <div class="gallery__meta">
-                  <h2 class="gallery__title">Проєкт <span lang="en">Boxes</span></h2>
+                  <h2 class="gallery__title">
+                    Проєкт <span lang="en">Boxes</span>
+                  </h2>
                   <p class="gallery__descr filter__name">Додаток</p>
                 </div>
               </a>
@@ -453,7 +461,9 @@
                   </p>
                 </div>
                 <div class="gallery__meta">
-                  <h2 class="gallery__title" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="gallery__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="gallery__descr filter__name">Веб-сайт</p>
                 </div>
               </a>
@@ -500,7 +510,9 @@
                 </div>
 
                 <div class="gallery__meta">
-                  <h2 class="gallery__title">Видання <span lang="en">Limited Edition</span></h2>
+                  <h2 class="gallery__title">
+                    Видання <span lang="en">Limited Edition</span>
+                  </h2>
                   <p class="gallery__descr filter__name">Дизайн</p>
                 </div>
               </a>
@@ -546,7 +558,9 @@
                   </p>
                 </div>
                 <div class="gallery__meta">
-                  <h2 class="gallery__title">Проєкт <span lang="en">LAB</span></h2>
+                  <h2 class="gallery__title">
+                    Проєкт <span lang="en">LAB</span>
+                  </h2>
                   <p class="gallery__descr filter__name">Маркетинг</p>
                 </div>
               </a>
@@ -579,9 +593,12 @@
                       "
                       sizes="100vw"
                     />
-                    <img class="gallery__img"
-                    src="./images/gallery9-mobile@1x-min.jpg" alt="Чоловічі руки
-                    на клавіатурі ноутбука, на екрані чоловік тримає планшет" />
+                    <img
+                      class="gallery__img"
+                      src="./images/gallery9-mobile@1x-min.jpg"
+                      alt="Чоловічі руки
+                    на клавіатурі ноутбука, на екрані чоловік тримає планшет"
+                    />
                   </picture>
                   <p class="gallery__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -677,9 +694,7 @@
         </div>
 
         <div class="footer__subscribe subscribe">
-          <p class="footer__text">
-            Підпишіться на розсилку
-          </p>
+          <p class="footer__text">Підпишіться на розсилку</p>
           <form action="#" class="subscribe__form">
             <label for="email" class="visually-hidden">E-mail</label>
             <input
