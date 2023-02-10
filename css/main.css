@@ -235,6 +235,12 @@ img {
     padding-bottom: 26px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 
 .footer__logo {
   margin-bottom: 20px;

@@ -24,6 +24,11 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
+
+  @include breakpoint(desktop) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .footer__logo {
